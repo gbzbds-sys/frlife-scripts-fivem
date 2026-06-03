@@ -87,36 +87,49 @@ section{padding:62px 7vw}.section-title{font-size:42px;margin:0 0 14px}.section-
 <article class="item-card"><img src="assets/boitier.png" alt="boitier"><strong>Boîtier de contrôle</strong><span>boitier.png</span><p>Boîtier permettant de gérer les trackers GPS actifs.</p></article>
 <article class="item-card"><img src="assets/bombe.png" alt="bombe"><strong>Bombe RP</strong><span>bombe.png</span><p>Module RP configurable.</p></article>
 <article class="item-card"><img src="assets/antitrakeur.png" alt="antitrakeur"><strong>Anti-tracker</strong><span>antitrakeur.png</span><p>Permet de scanner un véhicule et de détecter les trackers.</p></article></div>
-<details><summary>Code ox_inventory/data/items.lua — Tracker</summary><pre>[&quot;traker&quot;] = {
-    label = &quot;Tracker GPS&quot;,
+<details><summary>["traker"] = {
+    label = "Tracker GPS",
     weight = 250,
     stack = true,
     close = true,
-    description = &quot;Petit tracker GPS discret à poser sur un véhicule.&quot;
+    description = "Petit tracker GPS discret à poser sur un véhicule.",
+    client = {
+        event = "frlifetracker:client:useTrackerPanel"
+    }
 },
 
-[&quot;boitier&quot;] = {
-    label = &quot;Boîtier de contrôle&quot;,
+["boitier"] = {
+    label = "Boîtier de contrôle",
     weight = 500,
     stack = true,
     close = true,
-    description = &quot;Boîtier permettant de gérer les trackers GPS actifs.&quot;
+    description = "Boîtier permettant de gérer les trackers GPS actifs.",
+    client = {
+        event = "frlifetracker:client:useTrackerPanel"
+    }
 },
 
-[&quot;bombe&quot;] = {
-    label = &quot;Bombe RP&quot;,
+["bombe"] = {
+    label = "Bombe RP",
     weight = 1200,
     stack = true,
     close = true,
-    description = &quot;Module RP configurable.&quot;
+    description = "Module RP configurable.",
+    client = {
+        event = "frlifetracker:client:useBomb"
+    }
 },
 
-[&quot;antitrakeur&quot;] = {
-    label = &quot;Anti-tracker&quot;,
+["antitrakeur"] = {
+    label = "Anti-tracker",
     weight = 650,
     stack = true,
     close = true,
-    description = &quot;Permet de scanner un véhicule et de détecter les trackers.&quot;
+    description = "Permet de scanner un véhicule et de détecter les trackers.",
+    client = {
+        event = "frlifetracker:client:useAntiTracker"
+    }
+},&quot;
 },</pre></details>
 <details open><summary>Installation Tracker</summary><pre>1. Acheter le script sur Tebex.
 2. Récupérer l’accès FiveM Asset via Cfx/Keymaster.
