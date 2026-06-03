@@ -87,7 +87,9 @@ section{padding:62px 7vw}.section-title{font-size:42px;margin:0 0 14px}.section-
 <article class="item-card"><img src="assets/boitier.png" alt="boitier"><strong>Boîtier de contrôle</strong><span>boitier.png</span><p>Boîtier permettant de gérer les trackers GPS actifs.</p></article>
 <article class="item-card"><img src="assets/bombe.png" alt="bombe"><strong>Bombe RP</strong><span>bombe.png</span><p>Module RP configurable.</p></article>
 <article class="item-card"><img src="assets/antitrakeur.png" alt="antitrakeur"><strong>Anti-tracker</strong><span>antitrakeur.png</span><p>Permet de scanner un véhicule et de détecter les trackers.</p></article></div>
-<details><summary>["traker"] = {
+<details open>
+  <summary>Code ox_inventory/data/items.lua — Tracker</summary>
+  <pre><code>["traker"] = {
     label = "Tracker GPS",
     weight = 250,
     stack = true,
@@ -129,23 +131,8 @@ section{padding:62px 7vw}.section-title{font-size:42px;margin:0 0 14px}.section-
     client = {
         event = "frlifetracker:client:useAntiTracker"
     }
-},&quot;
-},</pre></details>
-<details open><summary>Installation Tracker</summary><pre>1. Acheter le script sur Tebex.
-2. Récupérer l’accès FiveM Asset via Cfx/Keymaster.
-3. Télécharger le ZIP Tebex avec README, images et items.
-4. Mettre la resource FRLifeTracker dans resources/[frlife]/.
-5. Copier les images dans ox_inventory/web/images/.
-6. Copier le code items dans ox_inventory/data/items.lua.
-7. Ajouter dans server.cfg :
-
-ensure ox_lib
-ensure oxmysql
-ensure ox_inventory
-ensure FRLifeTracker
-
-8. Redémarrer le serveur.
-9. Tester avec la commande /tracker.</pre></details></div></div>
+},</code></pre>
+</details></div></div>
 <div id="panel-vente" class="script-panel">
 <div class="panel-head"><img src="assets/vente-pnj-banner.png" alt="FRLife Vente PNJ"><div><h2 class="section-title">FRLife Vente PNJ Pro V2.1.0</h2><p class="lead">Système de vente aux PNJ avec items configurables, prix configurables, sécurité serveur contre l’abus de distance et blocage des PNJ invalides. Le client reçoit l’asset protégé via Cfx/Keymaster et le ZIP Tebex avec les 34 images, les items et le README.</p><div class="info-list"><div class="info"><b>Framework :</b> Qbox / QBCore</div><div class="info"><b>Inventaire :</b> ox_inventory</div><div class="info"><b>Commandes :</b> /ventepnj, /classementdeal</div><div class="info"><b>Images :</b> 34 incluses</div></div></div></div>
 <div class="block"><h3>Images et items Vente PNJ</h3><div class="note"><b>34 images incluses.</b> Tous les items vendables sont affichés ici. <b>argentsale</b> est l’item de récompense reçu après une vente, ce n’est pas un item vendu au PNJ.</div><div class="item-grid"><article class="item-card"><img src="assets/argentsale.png" alt="argentsale"><strong>Argent sale</strong><span>argentsale.png</span><p>Récompense reçue après une vente, ce n’est pas un item vendu au PNJ.</p></article>
